@@ -59,5 +59,9 @@ editable: true,
          events: this.eventData,
       };
    }
-ngOnInit() { }
+ngOnInit() { 
+  $('#full-calendar').fullCalendar(
+    this.defaultConfigurations
+ );
+}
 }

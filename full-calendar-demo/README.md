@@ -157,6 +157,24 @@ this.eventData = [
 }
 ```
 
+
+## Step-9.
+Initialize FullCalendar with defaultConfigurations object:
+full-calendar.component.ts:
+```ts
+...
+...
+   ngOnInit() {
+$('#full-calendar').fullCalendar(
+         this.defaultConfigurations
+      );
+   
+   }
+...
+...
+```
+
+
 # FullCalendarDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.

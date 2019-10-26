@@ -189,7 +189,7 @@ this.defaultConfigurations = {
       
       eventDragStart: (timeSheetEntry, jsEvent, ui, activeView) => {
          this.eventDragStart(
-             timeSheetEntry, jsEvent, ui, activeView\
+             timeSheetEntry, jsEvent, ui, activeView
          );
       },
 eventDragStop: (timeSheetEntry, jsEvent, ui, activeView) => {

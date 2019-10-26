@@ -16,3 +16,13 @@ cd full-calendar-demo
 ng serve --open
 ```
 
+## Step-2.
+Install JQuery, moment.js and FullCalendar packages:
+```
+// install other dependencies ( JQuery and moment ) with 
+// fullcalendar
+npm install jquery moment fullcalendar --save
+// install JQuery types for typescript support
+npm install --save-dev @types/jquery
+```
+

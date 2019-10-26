@@ -11,7 +11,7 @@ export class FullCalendarComponent implements OnInit {
 @Input()
       set configurations(config: any) {
          if(config) {
-            defaultConfigurations = config;  
+            this.defaultConfigurations = config;  
          }
       }
 @Input() eventData: any;

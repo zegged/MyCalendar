@@ -57,6 +57,8 @@ editable: true,
          selectable: true,
          selectHelper: true,
          events: this.eventData,
+         isRTL: true,
+         locale: 'he',
       dayClick: (date, jsEvent, activeView) => {
          this.dayClick(date, jsEvent, activeView);
       },

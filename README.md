@@ -26,3 +26,8 @@ npm install jquery moment fullcalendar --save
 npm install --save-dev @types/jquery
 ```
 
+## Step-3.
+Create a new component named full-calendar:
+```
+ng g c full-calendar
+```

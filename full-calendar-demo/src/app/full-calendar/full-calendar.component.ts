@@ -18,6 +18,18 @@ export class FullCalendarComponent implements OnInit {
    
    defaultConfigurations: any;
 constructor() {
+  this.eventData = [
+    {
+       title: 'event1',
+       start: moment()
+    },
+    {
+       title: 'event2',
+       start: moment(),
+       end: moment().add(2, 'days')
+    },
+];
+
 this.defaultConfigurations = {
 editable: true,
          eventLimit: true,

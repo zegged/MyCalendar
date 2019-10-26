@@ -135,6 +135,28 @@ ngOnInit() { }
 ```
 
 
+## Step-8.
+Let’s set some default events data to view events on the calendar:
+full-calendar.component.ts:
+```ts
+constructor() {
+this.eventData = [
+       {
+          title: 'event1',
+          start: moment()
+       },
+       {
+          title: 'event2',
+          start: moment(),
+          end: moment().add(2, 'days')
+       },
+   ];
+   ...
+   ...
+   ...
+}
+```
+
 # FullCalendarDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.

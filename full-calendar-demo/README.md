@@ -7,7 +7,7 @@ https://medium.com/aubergine-solutions/how-to-integrate-jquery-fullcalendar-in-a
 
 ## Step-1.
 Let’s first create a new Angular project named full-calendar-demo:
-```
+```bash
 // generate angular project
 ng new full-calendar-demo
 // go to project directory
@@ -18,7 +18,7 @@ ng serve --open
 
 ## Step-2.
 Install JQuery, moment.js and FullCalendar packages:
-```
+```bash
 // install other dependencies ( JQuery and moment ) with 
 // fullcalendar
 npm install jquery moment fullcalendar --save
@@ -28,10 +28,30 @@ npm install --save-dev @types/jquery
 
 ## Step-3.
 Create a new component named full-calendar:
-```
+```bash
 ng g c full-calendar
 ```
 
+## Step-4.
+Import full-calendar styles file in the angular.json file:
+angular.json:
+```json
+...
+...
+   "styles": [
+"./node_modules/fullcalendar/dist/fullcalendar.min.css",
+"src/styles.css"
+],
+...
+...
+```
+
+## Step-5.
+Modify app.component.html to view full-calendar component:
+app.component.html:
+```html
+<app-full-calendar></app-full-calendar>
+```
 
 
 

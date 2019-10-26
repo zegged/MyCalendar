@@ -57,6 +57,22 @@ editable: true,
          selectable: true,
          selectHelper: true,
          events: this.eventData,
+      dayClick: (date, jsEvent, activeView) => {
+         this.dayClick(date, jsEvent, activeView);
+      },
+      
+      eventDragStart: (timeSheetEntry, jsEvent, ui, activeView) => {
+         this.eventDragStart(
+             timeSheetEntry, jsEvent, ui, activeView
+         );
+      },
+eventDragStop: (timeSheetEntry, jsEvent, ui, activeView) => {
+         this.eventDragStop(
+            timeSheetEntry, jsEvent, ui, activeView
+         );
+      },
+
+         
       };
    }
 ngOnInit() { 
@@ -64,4 +80,15 @@ ngOnInit() {
     this.defaultConfigurations
  );
 }
+
+dayClick(date, jsEvent, activeView) {
+  console.log('day click');
+}
+eventDragStart(timeSheetEntry, jsEvent, ui, activeView) {
+  console.log('event drag start');
+}
+eventDragStop(timeSheetEntry, jsEvent, ui, activeView) {
+  console.log('event drag end');
+}
+
 }

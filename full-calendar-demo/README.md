@@ -175,6 +175,48 @@ $('#full-calendar').fullCalendar(
 ```
 
 
+## Step-10.
+Catch FullCalendar callbacks:
+full-calendar.component.ts:
+```ts
+constructor() {
+this.defaultConfigurations = {
+      ...
+      ...
+      dayClick: (date, jsEvent, activeView) => {
+         this.dayClick(date, jsEvent, activeView);
+      },
+      
+      eventDragStart: (timeSheetEntry, jsEvent, ui, activeView) => {
+         this.eventDragStart(
+             timeSheetEntry, jsEvent, ui, activeView\
+         );
+      },
+eventDragStop: (timeSheetEntry, jsEvent, ui, activeView) => {
+         this.eventDragStop(
+            timeSheetEntry, jsEvent, ui, activeView
+         );
+      },
+};
+}
+...
+...
+dayClick(date, jsEvent, activeView) {
+   console.log('day click');
+}
+eventDragStart(timeSheetEntry, jsEvent, ui, activeView) {
+   console.log('event drag start');
+}
+eventDragStop(timeSheetEntry, jsEvent, ui, activeView) {
+   console.log('event drag end');
+}
+...
+...
+```
+
+
+
+
 # FullCalendarDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.

@@ -11,8 +11,8 @@ and:
 https://blog.auberginesolutions.com/blog/how-to-integrate-jquery-fullcalendar-in-angular/
 
 
-1. create a new Angular project named full-calendar-demo:
-
+## 1. create a new Angular project named full-calendar-demo:
+```
 // generate angular project
 ng new my-calendar
 
@@ -21,3 +21,23 @@ cd my-calendar
 
 // start local server
 ng serve --open
+```
+
+## 2. Install JQuery, moment.js and FullCalendar packages:
+```
+// install other dependencies ( JQuery and moment ) with 
+// fullcalendar
+npm install jquery moment fullcalendar --save
+
+// install JQuery types for typescript support
+npm install --save-dev @types/jquery
+```
+
+
+
+## 3. Create a new component named full-calendar:
+```
+ng g c full-calendar
+```
+
+

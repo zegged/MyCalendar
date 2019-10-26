@@ -53,7 +53,24 @@ app.component.html:
 <app-full-calendar></app-full-calendar>
 ```
 
-
+## Step-6.
+Import JQuery, FullCalendar and moment packages in a component.ts file:
+full-calendar.component.ts:
+```js
+import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+import * as moment from 'moment';
+import 'fullcalendar';
+@Component({
+   selector: 'app-full-calendar',
+   templateUrl: './full-calendar.component.html',
+   styleUrls: ['./full-calendar.component.css']
+})
+export class FullCalendarComponent implements OnInit {
+constructor() { }
+ngOnInit() { }
+}
+```
 
 
 # FullCalendarDemo
